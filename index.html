@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocketCoffee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+
+    <div class="container">
+      <header id="header-desktop">
+        <img src="./assets/logo-desktop.svg" alt="Logo do RocketCoffee" />
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Recompensas</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Lojas</a></li>
+          </ul>
+        </nav>
+
+        <button>
+          <a href="#">PEGAR MEU CAFÉ</a>
+        </button>
+      </header>
+
+      <header id="header-mobile">
+        <img src="./assets/logo-mobile.svg" alt="Logo do RocketCoffee" />
+
+        <div id="button-burger" onclick="openMenuMobile()"></div>
+      </header>
+
+      <nav id="menu-mobile">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Recompensas</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Lojas</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div id="cta">
+          <h3>O café que fará seu código decolar para o próximo nível.</h3>
+
+          <button id="take-coffee">
+            PEGAR MEU CAFÉ
+            <img src="./assets/arrow.svg" alt="Ícone de um seta" />
+          </button>
+        </div>
+
+        <h1>Great Coffee</h1>
+        <h1>&lt;Great Code&sol;&gt;</h1>
+      </main>
+
+      <div id="coffee">
+        <img src="./assets/rocket-coffee.png" alt="Imagem de um café" />
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
