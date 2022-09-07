@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RocketCoffee</title>
 
+    <link rel="icon" href="./assets/logo-desktop.svg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,63 +16,76 @@
     />
 
     <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
-    <div id="background"></div>
+    <header class="header">
+      <a href="#" class="logo"> </a>
 
-    <div class="container">
-      <header id="header-desktop">
-        <img src="./assets/logo-desktop.svg" alt="Logo do RocketCoffee" />
-
-        <nav>
+      <div class="navbar_wrapper" data-js="navbar">
+        <nav class="navbar">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Recompensas</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Lojas</a></li>
+            <li class="selected">
+              <a href="#">Home</a>
+            </li>
+
+            <li>
+              <a href="#">Menu</a>
+            </li>
+
+            <li>
+              <a href="#">Recompensas</a>
+            </li>
+
+            <li>
+              <a href="#">Gift Cards</a>
+            </li>
+
+            <li>
+              <a href="#">Lojas</a>
+            </li>
           </ul>
         </nav>
+      </div>
 
-        <button>
-          <a href="#">PEGAR MEU CAFÉ</a>
-        </button>
-      </header>
+      <div class="menu open" data-js="menu"></div>
 
-      <header id="header-mobile">
-        <img src="./assets/logo-mobile.svg" alt="Logo do RocketCoffee" />
+      <div class="take-coffee-desktop">
+        <button class="button">Pegar meu café</button>
+      </div>
+    </header>
 
-        <div id="button-burger" onclick="openMenuMobile()"></div>
-      </header>
+    <main>
+      <section>
+        <div class="title_header">
+          <p class="title_header_text">
+            O café que fará seu código decolar para o próximo nível.
+          </p>
+        </div>
 
-      <nav id="menu-mobile">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Recompensas</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="#">Lojas</a></li>
-        </ul>
-      </nav>
-
-      <main>
-        <div id="cta">
-          <h3>O café que fará seu código decolar para o próximo nível.</h3>
-
-          <button id="take-coffee">
-            PEGAR MEU CAFÉ
-            <img src="./assets/arrow.svg" alt="Ícone de um seta" />
+        <div class="take-coffee-mobile">
+          <button class="button">
+            Pegar meu café
+            <img class="arrow" src="./assets/arrow.svg" />
           </button>
         </div>
 
-        <h1>Great Coffee</h1>
-        <h1>&lt;Great Code&sol;&gt;</h1>
-      </main>
+        <div>
+          <div class="great">
+            <p class="great_coffee">Great Coffee</p>
+            <p class="great_code">&lt;Great Code /&gt;</p>
+          </div>
 
-      <div id="coffee">
-        <img src="./assets/rocket-coffee.png" alt="Imagem de um café" />
-      </div>
-    </div>
+          <figure class="rocket-coffee-figure">
+            <img src="./assets/rocket-coffee.png" alt="RocketCoffee" />
+          </figure>
+        </div>
+      </section>
+    </main>
 
     <script src="./main.js"></script>
   </body>
